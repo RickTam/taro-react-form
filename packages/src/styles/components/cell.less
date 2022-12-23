@@ -1,0 +1,50 @@
+.ygp-cell {
+  position: relative;
+  font-size: 30px;
+  line-height: 1.5;
+  transition: background-color 0.3s;
+  padding: 0 24px;
+  overflow: hidden;
+  &-border {
+    border-bottom: 1px solid #ebebeb;
+  }
+  &:last-child &-border {
+    border-bottom: none;
+  }
+
+  &__container {
+    min-height: 104px;
+
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    flex: 1;
+    overflow: hidden;
+    color: #6b6b6b;
+    &-info {
+      color: #1c1d21;
+      font-weight: 400;
+    }
+  }
+  &__extra {
+    position: relative;
+    text-align: right;
+    color: #262626;
+    &-info {
+      overflow: hidden;
+      max-width: 100%;
+      padding-right: 40px;
+      vertical-align: middle;
+    }
+    &-icon {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}

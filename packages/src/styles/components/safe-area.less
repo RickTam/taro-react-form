@@ -1,0 +1,20 @@
+@position: sticky, fixed, absolute;
+.for(@position,@i:1) when (@i=<length(@position)) {
+  @item: extract(@position, @i);
+  .safe-area-top-@{item} {
+    position: @item !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .safe-area-bottom-@{item} {
+    position: @item !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .for(@position, (@i + 1));
+}
+.for(@position);

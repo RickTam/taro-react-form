@@ -1,0 +1,117 @@
+.ygp-form-item {
+  &:last-child {
+    .ygp-field-content {
+      border-color: transparent;
+    }
+  }
+}
+
+.ygp-field {
+  position: relative;
+  padding: 0 32px;
+  background-color: #fff;
+  &&-gap {
+    margin-bottom: 16px;
+    .ygp-field-content {
+      border-color: transparent;
+    }
+  }
+  &&-error {
+    .ygp-field-content {
+      border-color: #ff4949;
+    }
+  }
+  &&-required {
+    .ygp-field-content__label {
+      label::after {
+        content: '*';
+        position: absolute;
+        left: -16px;
+        top: 0;
+        color: #ff3b00;
+        font-size: 28px;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    border-bottom: 2px solid #ececec;
+    padding: 16px 0;
+    font-size: 30px;
+    &-horizontal {
+      justify-content: space-between;
+    }
+
+    &-vertical {
+      flex-direction: column;
+      .ygp-field-content__label {
+        margin-bottom: 16px;
+        width: 100% !important;
+      }
+    }
+
+    &__label {
+      color: #1c1d21;
+      margin-top: 16px;
+      label {
+        position: relative;
+      }
+    }
+    &__value {
+      flex: 1;
+      &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 32px;
+        &__control {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          min-height: 68px;
+          input {
+            padding: 12px 0;
+          }
+          &-right {
+            justify-content: flex-end;
+          }
+          &-left {
+            justify-content: flex-start;
+          }
+          &-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-content {
+              flex: 1;
+              &.placeholder {
+                color: #666;
+              }
+            }
+            &-arrow {
+              width: 24px;
+              height: 24px;
+              margin-left: 4px;
+            }
+          }
+          &-clear {
+            width: 32px;
+            height: 32px;
+            padding: 12px 0 12px 12px;
+          }
+        }
+        &__right {
+          margin-left: 24px;
+        }
+      }
+      &-error {
+        color: #ff4949;
+        margin-bottom: -16px;
+      }
+    }
+  }
+}
+
+.hoverClass {
+  background: #ffeae0;
+}

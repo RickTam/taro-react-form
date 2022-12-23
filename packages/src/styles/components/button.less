@@ -1,0 +1,199 @@
+.ygp-web-button {
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.ygp-button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  // margin: 0 auto;
+  border-radius: var(--button-radius);
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  background: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:active {
+    opacity: var(--opacity-active);
+  }
+
+  /* elements */
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: var(--button-min-width);
+    height: var(--button-height);
+    padding: 0 var(--button-default-v-padding);
+    line-height: var(--button-height);
+  }
+
+  &__wxbutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    min-width: var(--button-min-width);
+    height: 100%;
+    padding: 0;
+    padding: 0 var(--button-default-v-padding);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    opacity: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  /* modifiers */
+  &--active {
+    opacity: var(--opacity-active);
+  }
+
+  &--disabled {
+    opacity: 0.6;
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &--default {
+    border: 2px solid var(--color-border-base);
+    color: var(--color-text);
+  }
+
+  &--primary {
+    background: var(--color-primary);
+  }
+
+  &--info {
+    background: var(--color-info);
+  }
+
+  &--danger {
+    background: var(--color-error);
+  }
+
+  &--warning {
+    background: var(--color-warning);
+  }
+
+  &--success {
+    background: var(--color-success);
+  }
+
+  &--primary--border {
+    box-sizing: border-box;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background: none;
+  }
+
+  &--info--border {
+    box-sizing: border-box;
+    border: 2px solid var(--color-info);
+    color: var(--color-info);
+    background: none;
+  }
+
+  &--warning--border {
+    box-sizing: border-box;
+    border: 2px solid var(--color-warning);
+    color: var(--color-warning);
+    background: none;
+  }
+
+  &--danger--border {
+    box-sizing: border-box;
+    border: 2px solid var(--color-error);
+    color: var(--color-error);
+    background: none;
+  }
+
+  &--success--border {
+    box-sizing: border-box;
+    border: 2px solid var(--color-success);
+    color: var(--color-success);
+    background: none;
+  }
+
+  &--circle {
+    border-radius: var(--color-warning);
+  }
+
+  &--rect {
+    border-radius: 0;
+  }
+
+  &--large {
+    height: var(--button-large-height);
+    font-size: var(--font-size-base);
+
+    .ygp-button__wxbutton,
+    .ygp-button__text {
+      box-sizing: border-box;
+      min-width: var(--button-min-large-width);
+      height: var(--button-large-height);
+      padding: 0 var(--button-large-v-padding);
+      font-size: var(--button-large-text-size);
+      line-height: var(--button-large-height);
+    }
+  }
+
+  &--small {
+    height: var(--button-height-small);
+    font-size: var(--font-size-base);
+
+    .ygp-button__wxbutton,
+    .ygp-button__text {
+      box-sizing: border-box;
+      min-width: var(--button-min-width-small);
+      height: var(--button-height-small);
+      padding: 0 var(--button-small-v-padding);
+      font-size: var(--button-small-text-size);
+      line-height: var(--button-height-small);
+    }
+  }
+
+  &--mini {
+    box-sizing: border-box;
+    min-width: var(--button-min-width-mini);
+    height: var(--button-height-mini);
+    line-height: var(--button-height-mini);
+
+    .ygp-button__wxbutton,
+    .ygp-button__text {
+      box-sizing: border-box;
+      min-width: var(--button-min-width-mini);
+      height: var(--button-height-mini);
+      padding: 0 var(--button-mini-v-padding);
+      font-size: var(--button-mini-text-size);
+      line-height: var(--button-height-mini);
+    }
+  }
+
+  &--fill {
+    color: #ffffff;
+    background: var(--color-primary);
+  }
+
+  &__no-border {
+    border: none;
+  }
+
+  &--full {
+    width: 100%;
+    max-width: 100%;
+  }
+}

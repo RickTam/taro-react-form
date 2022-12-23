@@ -1,0 +1,46 @@
+.ygp-switch {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 21px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 0 auto; // 防止被压缩
+  &.switch-close {
+    background-color: var(--color-grey-2);
+  }
+  .switch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-white);
+    transition: transform 0.3s;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  }
+  &-disabled {
+    opacity: var(--opacity-disabled);
+  }
+  &-base {
+    width: 72px;
+    height: 42px;
+    line-height: 42px;
+    .switch-button {
+      height: 42px;
+      width: 42px;
+    }
+    &.switch-open {
+      .switch-button {
+        transform: translateX(73%);
+      }
+    }
+    &.switch-close {
+      .close-line {
+        width: 8px;
+        height: 2px;
+      }
+    }
+  }
+}
