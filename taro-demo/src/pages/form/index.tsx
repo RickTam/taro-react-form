@@ -1,5 +1,5 @@
 import { View } from '@tarojs/components'
-import { FormItemType, Form, Button, FooterArea } from 'taro-react-form'
+import Form, { FormItemType, Button, FooterArea } from 'taro-react-form'
 
 import './index.less'
 

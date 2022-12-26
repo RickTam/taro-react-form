@@ -14,8 +14,6 @@ export type Props = {
   placement?: 'bottom' | 'right' | 'top'
   /** 是否显示,默认为false */
   visible: boolean
-  /** 存在安全区,仅在placement为top时候生效,用于自定义导航头,默认为:false */
-  existSafeArea?: boolean
   /** 自定义头部节点 */
   headerSlot?: ReactNode
   /**弹框高度,仅在placement为bottom时生效,默认为 60% */
@@ -41,7 +39,6 @@ const Popup: FC<Props> = (props) => {
     height = '60%',
     width = '80%',
     transitionTime = 0.3,
-    existSafeArea = false,
     visible,
     headerLeft,
     onClose,

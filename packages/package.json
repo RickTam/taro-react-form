@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://gitlab.yigongpin.net/ygp-bciscm-frontend/ygp-taro-react-design.git"
+    "url": "https://github.com/RickTam/taro-react-form.git"
   },
   "publishConfig": {
-    "registry": "http://npm.yigongpin.net/"
+    "registry": "http://localhost:4873/"
   },
   "files": [
     "dist",
