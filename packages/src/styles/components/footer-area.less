@@ -1,0 +1,24 @@
+.ygp-footer-area {
+  height: 112px;
+  box-sizing: content-box;
+  position: relative;
+  z-index: 2;
+  &-fixed {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.ygp-footer-area-transparent {
+  .ygp-footer-area-fixed {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

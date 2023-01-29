@@ -1,0 +1,31 @@
+{
+  "name": "taro-react-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "node build/before-build.js && rollup -c rollup.config.js && node build/after-build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RickTam/taro-react-form.git"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  },
+  "files": [
+    "dist",
+    "hooks",
+    "utils"
+  ],
+  "author": "tanyufeng",
+  "license": "ISC",
+  "dependencies": {
+    "async-validator": "^4.2.5",
+    "classnames": "^2.3.1",
+    "rc-field-form": "^1.27.1"
+  }
+}

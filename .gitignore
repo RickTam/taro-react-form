@@ -1,0 +1,26 @@
+.DS_Store
+.history
+.idea
+node_modules
+package-lock.json
+*/dist
+lib
+*.zip
+
+#packages
+/packages/hooks
+/packages/utils
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directornd files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
