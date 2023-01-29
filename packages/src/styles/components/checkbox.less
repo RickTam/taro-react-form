@@ -1,0 +1,44 @@
+.btn-check-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .check-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--button-height-small);
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-sm);
+    color: #262626;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    background: #f6f6f6;
+    border: 2px solid #f6f6f6;
+  }
+
+  .check-item-row-2 {
+    flex: 0 0 calc(49.9999% - 16px);
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+  .check-item-row-3 {
+    flex: 0 0 calc(33.333333% - 16px);
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  .check-item-row-4 {
+    flex: 0 0 calc(24.9999999% - 16px);
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  .item-active {
+    background: rgba(254, 95, 35, 0.1);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+}

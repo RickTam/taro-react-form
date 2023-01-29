@@ -1,0 +1,83 @@
+{
+  "name": "ygp-taro-react-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:weapp": "cd taro-demo && npm run dev:weapp",
+    "dev:h5": "cd taro-demo && npm run dev:h5",
+    "build": "cd packages && npm run build",
+    "publish": "cd packages && npm run publish",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.yigongpin.net/ygp-bciscm-frontend/ygp-taro-react-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "@tarojs/components": "3.4.3",
+    "@tarojs/plugin-framework-react": "3.4.3",
+    "@tarojs/react": "3.4.3",
+    "@tarojs/runtime": "3.4.3",
+    "@tarojs/taro": "3.4.3",
+    "async-validator": "^4.2.5",
+    "classnames": "^2.3.1",
+    "lodash": "^4.17.21",
+    "rc-field-form": "^1.27.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/eslint-parser": "^7.18.9",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@tarojs/mini-runner": "3.4.3",
+    "@tarojs/webpack-runner": "3.4.3",
+    "@types/react": "^17.0.2",
+    "@types/uuid": "^8.3.4",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "babel-preset-taro": "3.4.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-taro": "^3.4.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-taro": "^3.3.20",
+    "fs-extra": "^8.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^2.7.1",
+    "rollup": "^2.79.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "stylelint": "^14.4.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "eslint"
+    ],
+    "*.less": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
